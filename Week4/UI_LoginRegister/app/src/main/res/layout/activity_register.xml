@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/top_background2" />
+
+        <!-- Nội dung phía trên -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create \nAccount"
+                android:textColor="#0656bf"
+                android:textSize="40sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:drawableStart="@drawable/name"
+                android:drawablePadding="8dp"
+                android:hint="Name"
+                android:paddingVertical="12dp"
+                android:paddingEnd="16dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:paddingVertical="12dp"
+                android:paddingEnd="16dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:paddingVertical="12dp"
+                android:paddingEnd="16dp"
+                android:inputType="textPassword" />
+            <ImageButton
+                android:id="@+id/myButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_arrow2"
+                android:background="@null"
+                android:contentDescription="Button Image"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="end"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingEnd="4dp"
+                    android:layout_gravity="end"
+                    android:text="Forget your password?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <!-- Chữ "Register" làm button -->
+                <TextView
+                    android:id="@+id/registerButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Recovery it"
+                    android:textColor="#03a3a6"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
