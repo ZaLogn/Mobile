@@ -25,6 +25,7 @@
             android:textStyle="bold"/>
 
         <EditText
+            android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
@@ -36,6 +37,7 @@
 
 
         <EditText
+            android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
@@ -46,7 +48,7 @@
             android:paddingEnd="16dp"
             android:inputType="textPassword" />
         <ImageButton
-            android:id="@+id/myButton"
+            android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/btn_arraw1"
